@@ -22,11 +22,11 @@ public class GameTest {
 
     @BeforeEach
     void setup() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
-        game.register(player4);
-        game.register(player5);
+        game.register("Name1", player1);
+        game.register("Name2", player2);
+        game.register("Name3", player3);
+        game.register("Name4", player4);
+        game.register("Name5", player5);
     }
 
 

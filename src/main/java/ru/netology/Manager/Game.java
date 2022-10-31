@@ -3,48 +3,33 @@ package ru.netology.Manager;
 import ru.netology.Data.Player;
 import ru.netology.Exception.NotRegisteredException;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Game {
 
-    List<Player> players = new ArrayList<>();
+    private Map<String, Player> players = new HashMap();
 
-    public void register(Player player) {
-        int i = players.size();
-        players.add(i, player);
-        players.size();
+    public void register(String name, Player player) {
+        players.put(name, player);
     }
-
-    public List<Player> findAll() {
-        return players;
-    }
-
+    
 
     public int round(String playerName1, String playerName2) {
-        int indexOne = indexFound(playerName1);
-        int indexTwo = indexFound(playerName2);
-        if (indexOne == -1) {
+        Player playerOne = players.get(playerName1.toLowerCase());
+        Player playerTwo = players.get(playerName2.toLowerCase());
+        if (playerOne == null) {
             throw new NotRegisteredException("Игрок не зарегистрирован для участия в турнире!");
-        } else if (indexTwo == -1) {
+        } else if (playerTwo == null) {
             throw new NotRegisteredException("Игрок не зарегистрирован для участия в турнире!");
         }
-        if (players.get(indexOne).getStrength() > players.get(indexTwo).getStrength()) {
+        if (playerOne.getStrength() > playerTwo.getStrength()) {
             return 1;
-        } else if (players.get(indexOne).getStrength() < players.get(indexTwo).getStrength()) {
+        } else if (playerOne.getStrength() < playerTwo.getStrength()) {
             return 2;
         } else {
             return 0;
         }
-    }
-
-    public int indexFound(String playerName) {
-        for (Player player : players) {
-            if (player.getName().equalsIgnoreCase(playerName)) {
-                return players.indexOf(player);
-            }
-        }
-        return -1;
     }
 
 

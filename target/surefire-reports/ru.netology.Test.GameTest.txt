@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: ru.netology.Test.GameTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in ru.netology.Test.GameTest
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.137 s <<< FAILURE! - in ru.netology.Test.GameTest
+FirstPlayerWin  Time elapsed: 0.079 s  <<< ERROR!
+ru.netology.Exception.NotRegisteredException: Игрок не зарегистрирован для участия в турнире!
+	at ru.netology.Test.GameTest.FirstPlayerWin(GameTest.java:35)
+
+Draw  Time elapsed: 0.005 s  <<< ERROR!
+ru.netology.Exception.NotRegisteredException: Игрок не зарегистрирован для участия в турнире!
+	at ru.netology.Test.GameTest.Draw(GameTest.java:45)
+
+SecondPlayerWin  Time elapsed: 0.002 s  <<< ERROR!
+ru.netology.Exception.NotRegisteredException: Игрок не зарегистрирован для участия в турнире!
+	at ru.netology.Test.GameTest.SecondPlayerWin(GameTest.java:40)
+
