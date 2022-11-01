@@ -9,6 +9,8 @@ import ru.netology.Exception.NotRegisteredException;
 import java.util.HashMap;
 import java.util.Map;
 
+
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -39,6 +41,5 @@ public class Game {
             return 0;
         }
     }
-
 
 }

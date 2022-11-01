@@ -37,18 +37,18 @@ public class GameTest {
 
     @Test
     void SecondPlayerWin() {
-        assertEquals(2, game.round("Name4", "name2"));
+        assertEquals(2, game.round("Name4", "Name2"));
     }
 
     @Test
     void Draw() {
-        assertEquals(0, game.round("name1", "nAME5"));
+        assertEquals(0, game.round("Name1", "Name5"));
     }
 
     @Test
     void NotRegisteredExceptionOne() {
         assertThrows(NotRegisteredException.class, () -> {
-            game.round("NaMe3", "Антон");
+            game.round("Name3", "Антон");
         });
     }
 
