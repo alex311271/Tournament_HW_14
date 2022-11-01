@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.Test.GameTest" time="0.091" tests="5" errors="3" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.Test.GameTest" time="0.179" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\Alexey\.jdks\corretto-11.0.16.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Alexey\AppData\Local\Temp\surefire5864193592970918491\surefirebooter467389577236080650.jar C:\Users\Alexey\AppData\Local\Temp\surefire5864193592970918491 2022-10-31T17-41-37_121-jvmRun1 surefire3407102644225700150tmp surefire_02236434760882479181tmp"/>
+    <property name="sun.java.command" value="C:\Users\Alexey\AppData\Local\Temp\surefire2670642786523169595\surefirebooter1336303004593680891.jar C:\Users\Alexey\AppData\Local\Temp\surefire2670642786523169595 2022-11-01T17-23-14_891-jvmRun1 surefire4675380175413085070tmp surefire_011330978686174260859tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\Aleksey\Education\IT\QA\Java\Tournament\target\test-classes;E:\Aleksey\Education\IT\QA\Java\Tournament\target\classes;C:\Users\Alexey\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\junit-jupiter-5.9.0.jar;C:\Users\Alexey\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Alexey\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Alexey\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\Alexey\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Alexey\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\Alexey\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Alexey\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\Alexey\.m2\repository\org\mockito\mockito-junit-jupiter\4.8.0\mockito-junit-jupiter-4.8.0.jar;C:\Users\Alexey\.m2\repository\org\mockito\mockito-core\4.8.0\mockito-core-4.8.0.jar;C:\Users\Alexey\.m2\repository\net\bytebuddy\byte-buddy\1.12.14\byte-buddy-1.12.14.jar;C:\Users\Alexey\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.14\byte-buddy-agent-1.12.14.jar;C:\Users\Alexey\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Alexey\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Alexey\AppData\Local\Temp\surefire5864193592970918491\surefirebooter467389577236080650.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Alexey\AppData\Local\Temp\surefire2670642786523169595\surefirebooter1336303004593680891.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16.1+9-LTS"/>
@@ -61,21 +61,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="FirstPlayerWin" classname="ru.netology.Test.GameTest" time="0.049">
-    <error message="Игрок не зарегистрирован для участия в турнире!" type="ru.netology.Exception.NotRegisteredException">ru.netology.Exception.NotRegisteredException: Игрок не зарегистрирован для участия в турнире!
-	at ru.netology.Test.GameTest.FirstPlayerWin(GameTest.java:35)
-</error>
-  </testcase>
-  <testcase name="NotRegisteredExceptionOne" classname="ru.netology.Test.GameTest" time="0.009"/>
-  <testcase name="NotRegisteredExceptionTwo" classname="ru.netology.Test.GameTest" time="0.001"/>
-  <testcase name="Draw" classname="ru.netology.Test.GameTest" time="0.001">
-    <error message="Игрок не зарегистрирован для участия в турнире!" type="ru.netology.Exception.NotRegisteredException">ru.netology.Exception.NotRegisteredException: Игрок не зарегистрирован для участия в турнире!
-	at ru.netology.Test.GameTest.Draw(GameTest.java:45)
-</error>
-  </testcase>
-  <testcase name="SecondPlayerWin" classname="ru.netology.Test.GameTest" time="0.001">
-    <error message="Игрок не зарегистрирован для участия в турнире!" type="ru.netology.Exception.NotRegisteredException">ru.netology.Exception.NotRegisteredException: Игрок не зарегистрирован для участия в турнире!
-	at ru.netology.Test.GameTest.SecondPlayerWin(GameTest.java:40)
-</error>
-  </testcase>
+  <testcase name="FirstPlayerWin" classname="ru.netology.Test.GameTest" time="0.057"/>
+  <testcase name="NotRegisteredExceptionOne" classname="ru.netology.Test.GameTest" time="0.012"/>
+  <testcase name="NotRegisteredExceptionTwo" classname="ru.netology.Test.GameTest" time="0.014"/>
+  <testcase name="Draw" classname="ru.netology.Test.GameTest" time="0.002"/>
+  <testcase name="SecondPlayerWin" classname="ru.netology.Test.GameTest" time="0.003"/>
 </testsuite>
