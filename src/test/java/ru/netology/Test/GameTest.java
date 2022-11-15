@@ -22,11 +22,11 @@ public class GameTest {
 
     @BeforeEach
     void setup() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
-        game.register(player4);
-        game.register(player5);
+        game.register("Name1", player1);
+        game.register("Name2", player2);
+        game.register("Name3", player3);
+        game.register("Name4", player4);
+        game.register("Name5", player5);
     }
 
 
@@ -37,18 +37,18 @@ public class GameTest {
 
     @Test
     void SecondPlayerWin() {
-        assertEquals(2, game.round("Name4", "name2"));
+        assertEquals(2, game.round("Name4", "Name2"));
     }
 
     @Test
     void Draw() {
-        assertEquals(0, game.round("name1", "nAME5"));
+        assertEquals(0, game.round("Name1", "Name5"));
     }
 
     @Test
     void NotRegisteredExceptionOne() {
         assertThrows(NotRegisteredException.class, () -> {
-            game.round("NaMe3", "Антон");
+            game.round("Name3", "Антон");
         });
     }
 
